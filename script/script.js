@@ -159,7 +159,6 @@ function symbolCoords() {
     }
 }
 
-console.log('Hello');
 
 // function draw() {
 //     let canvas = document.querySelector(".canvas-main");
