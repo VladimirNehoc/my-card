@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look at me</title>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src='script/jquery.js'></script>
+</head>
+<body>
+    <div class="back-call">
+        <form class='back-call__form' action="#" enctype="multipart/form-data" method="POST">
+            <p>Ваш номер телефона:</p>
+            <input type="text" name='number'>
+            <p>Ваше имя:</p>
+            <input type="text" name='name'>
+            <input type="submit" name='submit' value='Заказать звонок'>
+        </form>
+    </div>
+    <header>
+        <div class="header-container">
+            <div class="menu-container">
+                <button class="burger-button"></button>
+                <ul>
+                    <li><a href="#">услуги</a></li>
+                    <li><a href="#">портфолио</a></li>
+                    <li><a href="#">стоимость</a></li>
+                </ul>
+            </div>
+            <span class='number-mobile'>+7 (937) 272-68-88</span>
+            <div class="number-container">
+                <span class='number-desktop'>+7 (937) 272-68-88</span>
+                <button class='call'>Заказать звонок</button>
+                <button class='call-mobile'><span class='flaticon-telephone-handle-silhouette'></span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="main-inform-container">
+                <span>Владимир Нехоц</span>
+                <span>Frontend-разработчик и веб-верстальщик</span>
+                <button class='orange-button'>Узнать больше</button>
+            </div>
+            <div class="main-photo-container"></div>
+            <svg class='svg-main' viewbox='0 0 1000 600'>
+                <defs>
+                    <linearGradient id='pink-orange' x1='70%' y1='0' x2='30%' y2='100%'>
+                        <stop offset='0%' stop-color='#ff2f96' />
+                        <stop offset='10%' stop-color='#ff2f96' />
+                        <stop offset='100%' stop-color='#ff8f5a' />
+                    </linearGradient>
+                </defs>
+                <path fill= "url(#pink-orange)" stroke="#333333" stroke-width="0" d='M70 600, Q40 530, 70 460 S180 180, 450 50 Q550 0, 650 50 T950 400 Q1000 500, 950 600' />
+            </svg>
+            <!-- <canvas width='1000px' height='600px' class='canvas-main'></canvas> -->
+            <div class="animate-container">
+                <svg class='svg-animate' width='1170px' height='600px' viewbox='0 0 1170 600'>
+                    <text fill='url(#pink-orange-animate)' class='svg-animate-text svg-animate-text-1' x='550' y='80' transform='rotate(-15, 550, 80)'>&lt;div&gt;</text>
+                    <text fill='url(#pink-orange-animate)' class='svg-animate-text svg-animate-text-2' x='600' y='450' transform='rotate(18, 600, 450)'>#</text>
+                    <text fill='url(#pink-orange-animate)' class='svg-animate-text svg-animate-text-3' x='110' y='260' transform='rotate(15, 110, 260)'>&lt;div&gt;</text>
+                    <text fill='url(#pink-orange-animate)' class='svg-animate-text svg-animate-text-4' x='250' y='520' transform='rotate(-24, 250, 520)'>&lt;/&gt;</text>
+                    <text fill='url(#pink-orange-animate)' class='svg-animate-text svg-animate-text-5' x='70' y='50' transform='rotate(24, 70, 50)'>{ }</text>
+
+                    <linearGradient id="pink-orange-animate" x1='40%' y1='0' x2='60%' y2='100%'>
+                        <stop offset='0%' stop-color='#ff2f96' />
+                        <stop offset='50%' stop-color='#ff2f96' />
+                        <stop offset='100%' stop-color='#ff8f5a' />
+                    </linearGradient>
+                </svg>
+            </div>
+        </div>
+    </main>
+    <section class="what-i-do">
+        <div class="what-i-do-container section-flex-column">
+            <span class='heading'>Что я делаю</span>
+            <div class="skills-container">
+                <article>
+                    <img src="src/WID-1.jpg" alt="What I do">
+                    <p>Верстка лендинг страниц и&nbsp;сайтов любой сложности</p>
+                </article>
+                <article>
+                    <img src="src/WID-2.png" alt="What I do">
+                    <p>Адаптивная вёрстка под все браузеры и устройства</p>
+                </article>
+                <article>
+                    <img src="src/WID-3.png" alt="What I do">
+                    <p>Frontend-разработка и программирование</p>
+                </article>
+                <article>
+                    <img src="src/WID-4.png" alt="What I do">
+                    <p>Исправление и доработка существующей вёрстки</p>
+                </article>
+            </div>
+            <button class='orange-button'>Узнать стоимость</button>
+        </div>
+    </section>
+    <section class="my-works">
+        <div class="my-works-container section-flex-column">
+            <span class="heading">Примеры моих работ</span>
+            <div class="button-container">
+                <div class="switch-container"></div>
+                <button class="move-button move-left"><img src="src/arrow-left.png" alt="left"></button>
+                <button class="move-button move-right"><img src="src/arrow-right.png" alt="right"></button>
+            </div>
+            <div class="dot-container">
+                <button class="dot-1"></button>
+                <button class="dot-2"></button>
+                <button class="dot-3"></button>
+            </div>
+            <button class="orange-button">Заказать проект</button>
+        </div>
+    </section>
+    <section class='gradient'>
+        <div class="gradient-container section-flex-column">
+            <div class="text-container">
+                <span>Адаптивная верстка под все&nbsp;устройства и&nbsp;браузеры от&nbsp;1000&nbsp;рублей 
+                    всего&nbsp;за&nbsp;4&nbsp;часа.*</span>
+                <span>* Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются 
+                    индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
+                </span>
+            </div>
+            <span class='gradient-symbols gradient-symbols-1'>&lt;/&gt;</span>
+            <span class='gradient-symbols gradient-symbols-2'>{ }</span>
+            <span class='gradient-symbols gradient-symbols-3'>&lt;div&gt;</span>
+            <span class='gradient-symbols gradient-symbols-4'>#</span>
+            <span class='gradient-symbols gradient-symbols-5'>{ }</span>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-main-container">
+            <article class='left-footer-container'>
+                <ul>
+                    <li><a href="#">услуги</a></li>
+                    <li><a href="#">портфолио</a></li>
+                    <li><a href="#">стоимость</a></li>
+                </ul>
+            </article>
+            <article class='center-footer-container'>
+                <div class='number-footer'><span class='flaticon-telephone-handle-silhouette'></span><span>+7 (937) 272-68-88</span></div>
+                <div class='mail-footer'><span class="flaticon-envelope"></span><span>www.vova-nehoc@mail.ru</span></div>
+            </article>
+            <article class='right-footer-container'>
+                <button class='call'>Заказать звонок</button>
+                <div class="social-container">
+                    <div class="vk"><a href="#"></a></div>
+                    <div class="facebook"><a href="#"></a></div>
+                    <div class="twitter"><a href="#"></a></div>
+                    <div class="instagram"><a href="#"></a></div>
+                </div>
+            </article>
+        </div>
+        <span class='footer-end'>Нехоц Владимир, 2016 - 2018</span>
+    </footer>
+
+    <script type='application/javascript' src='script/script.js'></script>
+</body>
+</html>
