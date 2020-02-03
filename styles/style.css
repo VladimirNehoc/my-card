@@ -149,35 +149,38 @@ main {
     overflow: hidden;
 }
 
-    .animate-container {
+    .flying-symbols {
         position: absolute;
-        left: -200px;
-        top: 0;
+        width: 100%;
+        height: 100%;
+        color: var(--pink-color);
+        font-weight: 700;
     }
 
-        .svg-animate-text-1 {
-            font-size: 28px;
-            font-weight: 700;
+        .flying-symbols__symbol {
+            position: absolute;
+            transform-origin: center center;
         }
 
-        .svg-animate-text-2 {
-            font-size: 46px;
-            font-weight: 700;
+        .flying-symbols__symbol_01 {
+            font-size: 32px;
+            transform: translate(350px, 30px) rotate(-18deg);
         }
-
-        .svg-animate-text-3 {
-            font-size: 28px;
-            font-weight: 700;
-        }
-
-        .svg-animate-text-4 {
+        .flying-symbols__symbol_02 {
             font-size: 30px;
-            font-weight: 700;
+            transform: translate(430px, 370px) rotate(15deg);
         }
-
-        .svg-animate-text-5 {
+        .flying-symbols__symbol_03 {
+            font-size: 26px;
+            transform: translate(50px, 500px) rotate(18deg);
+        }
+        .flying-symbols__symbol_04 {
             font-size: 34px;
-            font-weight: 700;
+            transform: translate(-50px, 200px) rotate(-18deg);
+        }
+        .flying-symbols__symbol_05 {
+            font-size: 30px;
+            transform: translate(-120px, 0px) rotate(15deg);
         }
 
     .main-container {
@@ -541,6 +544,11 @@ main {
         font-size: 16px;
     }
 
+    .flying-symbols__symbol_02 {
+        font-size: 30px;
+        transform: translate(300px, 340px) rotate(15deg);
+    }
+
     .skills-container__article {
         font-size: 14px;
         min-width: 220px
@@ -605,6 +613,19 @@ main {
         font-size: 24px;
         position: relative;
         top: 2px;
+    }
+
+    .flying-symbols__symbol_01 {
+        font-size: 32px;
+        transform: translate(320px, 0px) rotate(-18deg);
+    }
+    .flying-symbols__symbol_02 {
+        font-size: 30px;
+        transform: translate(190px, 370px) rotate(15deg);
+    }
+    .flying-symbols__symbol_03 {
+        font-size: 26px;
+        transform: translate(20px, 500px) rotate(18deg);
     }
 
     .main-inform-container {
@@ -728,6 +749,19 @@ main {
 
 
 @media (max-width: 850px) {
+    .flying-symbols__symbol_01 {
+        font-size: 32px;
+        transform: translate(320px, 0px) rotate(-18deg);
+    }
+    .flying-symbols__symbol_02 {
+        font-size: 30px;
+        transform: translate(140px, 340px) rotate(15deg);
+    }
+    .flying-symbols__symbol_03 {
+        font-size: 26px;
+        transform: translate(10px, 500px) rotate(18deg);
+    }
+
     .main-inform-container {
         position: relative;
         top: -100px;
@@ -801,6 +835,28 @@ main {
             width: 666px;
             height: 400px;
             left: 20%;
+        }
+
+        .flying-symbols__symbol_01 {
+            font-size: 24px;
+            transform: translate(220px, 10px) rotate(-18deg);
+        }
+        .flying-symbols__symbol_02 {
+            font-size: 22px;
+            transform: translate(80px, 300px) rotate(15deg);
+        }
+        .flying-symbols__symbol_03 {
+            font-size: 26px;
+            transform: translate(50px, 500px) rotate(18deg);
+            display: none;
+        }
+        .flying-symbols__symbol_04 {
+            font-size: 24px;
+            transform: translate(10px, 150px) rotate(-18deg);
+        }
+        .flying-symbols__symbol_05 {
+            font-size: 20px;
+            transform: translate(160px, 120px) rotate(15deg);
         }
 
         .main-photo-container {
@@ -903,6 +959,28 @@ main {
 
     .svg-main, .canvas-main {
         left: -5%;
+    }
+
+    .flying-symbols__symbol_01 {
+        font-size: 20px;
+        transform: translate(100px, -10px) rotate(-18deg);
+    }
+    .flying-symbols__symbol_02 {
+        font-size: 22px;
+        transform: translate(110px, 80px) rotate(15deg);
+    }
+    .flying-symbols__symbol_03 {
+        font-size: 26px;
+        transform: translate(50px, 500px) rotate(18deg);
+        display: none;
+    }
+    .flying-symbols__symbol_04 {
+        font-size: 24px;
+        transform: translate(10px, 150px) rotate(-18deg);
+    }
+    .flying-symbols__symbol_05 {
+        font-size: 20px;
+        transform: translate(440px, 20px) rotate(15deg);
     }
 
     .main-photo-container {
