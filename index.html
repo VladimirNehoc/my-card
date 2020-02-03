@@ -11,37 +11,37 @@
 <body>
     <div class="back-call">
         <form class='back-call__form' action="#" enctype="multipart/form-data" method="POST">
-            <p>Ваш номер телефона:</p>
-            <input type="text" name='number'>
-            <p>Ваше имя:</p>
-            <input type="text" name='name'>
-            <input type="submit" name='submit' value='Заказать звонок'>
+            <p class='back-call__text'>Ваш номер телефона:</p>
+            <input class='back-call__input' type="text" name='number'>
+            <p class='back-call__text'>Ваше имя:</p>
+            <input class='back-call__input' type="text" name='name'>
+            <input class='back-call__submit' type="submit" name='submit' value='Заказать звонок'>
         </form>
     </div>
     <header>
         <div class="header-container">
-            <div class="menu-container">
-                <button class="burger-button"></button>
-                <ul>
-                    <li><a href="#">услуги</a></li>
-                    <li><a href="#">портфолио</a></li>
-                    <li><a href="#">стоимость</a></li>
+            <div class="menu">
+                <button class="menu__burger-button"></button>
+                <ul class='menu__list'>
+                    <li class='menu__item'><a href="#">услуги</a></li>
+                    <li class='menu__item'><a href="#">портфолио</a></li>
+                    <li class='menu__item'><a href="#">стоимость</a></li>
                 </ul>
             </div>
             <span class='number-mobile'>+7 (937) 272-68-88</span>
             <div class="number-container">
-                <span class='number-desktop'>+7 (937) 272-68-88</span>
-                <button class='call'>Заказать звонок</button>
-                <button class='call-mobile'><span class='flaticon-telephone-handle-silhouette'></span></button>
+                <span class='number-container__desktop'>+7 (937) 272-68-88</span>
+                <button class='number-container__call call'>Заказать звонок</button>
+                <button class='number-container__call-mobile'><span class='flaticon-telephone-handle-silhouette'></span></button>
             </div>
         </div>
     </header>
     <main>
         <div class="main-container">
             <div class="main-inform-container">
-                <span>Владимир Нехоц</span>
-                <span>Frontend-разработчик и веб-верстальщик</span>
-                <button class='orange-button'>Узнать больше</button>
+                <span class='main-inform-container__text_lg'>Владимир Нехоц</span>
+                <span class='main-inform-container__text_sm'>Frontend-разработчик и веб-верстальщик</span>
+                <button class='main-inform-container__orange-button orange-button'>Узнать больше</button>
             </div>
             <div class="main-photo-container"></div>
             <svg class='svg-main' viewbox='0 0 1000 600'>
@@ -74,23 +74,23 @@
     </main>
     <section class="what-i-do">
         <div class="what-i-do-container section-flex-column">
-            <span class='heading'>Что я делаю</span>
+            <span class='what-i-do__heading heading'>Что я делаю</span>
             <div class="skills-container">
-                <article>
-                    <img src="src/WID-1.jpg" alt="What I do">
-                    <p>Верстка лендинг страниц и&nbsp;сайтов любой сложности</p>
+                <article class='skills-container__article'>
+                    <img class='class='skills-container__img src="src/WID-1.jpg" alt="What I do">
+                    <p class='skills-container__text'>Верстка лендинг страниц и&nbsp;сайтов любой сложности</p>
                 </article>
-                <article>
-                    <img src="src/WID-2.png" alt="What I do">
-                    <p>Адаптивная вёрстка под все браузеры и устройства</p>
+                <article class='skills-container__article'>
+                    <img class='class='skills-container__img src="src/WID-2.png" alt="What I do">
+                    <p class='skills-container__text'>Адаптивная вёрстка под все браузеры и устройства</p>
                 </article>
-                <article>
-                    <img src="src/WID-3.png" alt="What I do">
-                    <p>Frontend-разработка и программирование</p>
+                <article class='skills-container__article'>
+                    <img class='class='skills-container__img src="src/WID-3.png" alt="What I do">
+                    <p class='skills-container__text'>Frontend-разработка и программирование</p>
                 </article>
-                <article>
-                    <img src="src/WID-4.png" alt="What I do">
-                    <p>Исправление и доработка существующей вёрстки</p>
+                <article class='skills-container__article'>
+                    <img class='class='skills-container__img src="src/WID-4.png" alt="What I do">
+                    <p class='skills-container__text'>Исправление и доработка существующей вёрстки</p>
                 </article>
             </div>
             <button class='orange-button'>Узнать стоимость</button>
@@ -98,60 +98,60 @@
     </section>
     <section class="my-works">
         <div class="my-works-container section-flex-column">
-            <span class="heading">Примеры моих работ</span>
-            <div class="button-container">
-                <div class="switch-container"></div>
-                <button class="move-button move-left"><img src="src/arrow-left.png" alt="left"></button>
-                <button class="move-button move-right"><img src="src/arrow-right.png" alt="right"></button>
+            <span class="my-works-container__heading heading">Примеры моих работ</span>
+            <div class="my-works-container__button-container">
+                <div class="my-works-container__switch-container"></div>
+                <button class="my-works-container__move-button move-left"><img src="src/arrow-left.png" alt="left"></button>
+                <button class="my-works-container__move-button move-right"><img src="src/arrow-right.png" alt="right"></button>
             </div>
-            <div class="dot-container">
-                <button class="dot-1"></button>
-                <button class="dot-2"></button>
-                <button class="dot-3"></button>
+            <div class="my-works-container__dot-container">
+                <button class="my-works-container__dot-1"></button>
+                <button class="my-works-container__dot-2"></button>
+                <button class="my-works-container__dot-3"></button>
             </div>
             <button class="orange-button">Заказать проект</button>
         </div>
     </section>
     <section class='gradient'>
-        <div class="gradient-container section-flex-column">
-            <div class="text-container">
-                <span>Адаптивная верстка под все&nbsp;устройства и&nbsp;браузеры от&nbsp;1000&nbsp;рублей 
+        <div class="gradient__container section-flex-column">
+            <div class="gradient__text-container">
+                <span class='gradient__text'>Адаптивная верстка под все&nbsp;устройства и&nbsp;браузеры от&nbsp;1000&nbsp;рублей 
                     всего&nbsp;за&nbsp;4&nbsp;часа.*</span>
-                <span>* Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются 
+                <span class='gradient__text'>* Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются 
                     индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
                 </span>
             </div>
-            <span class='gradient-symbols gradient-symbols-1'>&lt;/&gt;</span>
-            <span class='gradient-symbols gradient-symbols-2'>{ }</span>
-            <span class='gradient-symbols gradient-symbols-3'>&lt;div&gt;</span>
-            <span class='gradient-symbols gradient-symbols-4'>#</span>
-            <span class='gradient-symbols gradient-symbols-5'>{ }</span>
+            <span class='gradient__symbols gradient__symbols-1'>&lt;/&gt;</span>
+            <span class='gradient__symbols gradient__symbols-2'>{ }</span>
+            <span class='gradient__symbols gradient__symbols-3'>&lt;div&gt;</span>
+            <span class='gradient__symbols gradient__symbols-4'>#</span>
+            <span class='gradient__symbols gradient__symbols-5'>{ }</span>
         </div>
     </section>
-    <footer>
-        <div class="footer-main-container">
-            <article class='left-footer-container'>
-                <ul>
-                    <li><a href="#">услуги</a></li>
-                    <li><a href="#">портфолио</a></li>
-                    <li><a href="#">стоимость</a></li>
+    <footer class='footer'>
+        <div class="footer__main-container">
+            <article class='footer__left-article'>
+                <ul class='footer__left-article_list'>
+                    <li class='footer__left-article_item'><a class='footer__left-article_link' href="#">услуги</a></li>
+                    <li class='footer__left-article_item'><a class='footer__left-article_link' href="#">портфолио</a></li>
+                    <li class='footer__left-article_item'><a class='footer__left-article_link' href="#">стоимость</a></li>
                 </ul>
             </article>
-            <article class='center-footer-container'>
-                <div class='number-footer'><span class='flaticon-telephone-handle-silhouette'></span><span>+7 (937) 272-68-88</span></div>
-                <div class='mail-footer'><span class="flaticon-envelope"></span><span>www.vova-nehoc@mail.ru</span></div>
+            <article class='footer__center-article'>
+                <div class='footer__center-article_number'><span class='footer__center-article_flaticon-telephone-handle-silhouette'></span><span>+7 (937) 272-68-88</span></div>
+                <div class='footer__center-article_mail'><span class="flaticon-envelope"></span><span>www.vova-nehoc@mail.ru</span></div>
             </article>
-            <article class='right-footer-container'>
-                <button class='call'>Заказать звонок</button>
+            <article class='footer__right-article'>
+                <button class='footer__right-article_call call'>Заказать звонок</button>
                 <div class="social-container">
-                    <div class="vk"><a href="#"></a></div>
-                    <div class="facebook"><a href="#"></a></div>
-                    <div class="twitter"><a href="#"></a></div>
-                    <div class="instagram"><a href="#"></a></div>
+                    <div class="social-container__vk"><a href="#"></a></div>
+                    <div class="social-container__facebook"><a href="#"></a></div>
+                    <div class="social-container__twitter"><a href="#"></a></div>
+                    <div class="social-container__instagram"><a href="#"></a></div>
                 </div>
             </article>
         </div>
-        <span class='footer-end'>Нехоц Владимир, 2016 - 2018</span>
+        <span class='footer__end'>Нехоц Владимир, 2016 - 2018</span>
     </footer>
 
     <script type='application/javascript' src='script/script.js'></script>
