@@ -26,6 +26,26 @@ $(function() {
         if (event.target != this) return;
         callOut();
     });
+
+
+
+    function fade() {
+        $('.flying-symbols').animate({opacity: '1'}, 2000);
+        let coords = {
+            left: '0',
+            top: '0'
+        };
+        $('.flying-symbols__symbol').each(function() {
+            $(this).animate({
+                left: '0',
+                top: '0'
+            }, 2000);
+        });
+    }
+
+    setTimeout(() => {
+        fade();
+    }, 500);
 });
 
 function menuOpen() {
@@ -79,27 +99,6 @@ function callOut() {
 // }
 
 // draw();
-
-
-$(function() {
-    function fade() {
-        $('.flying-symbols').animate({opacity: '1'}, 2000);
-        let coords = {
-            left: '0',
-            top: '0'
-        };
-        $('.flying-symbols__symbol').each(function() {
-            $(this).animate({
-                left: '0',
-                top: '0'
-            }, 2000);
-        });
-    }
-
-    setTimeout(() => {
-        fade();
-    }, 1000);
-});
 
 
 

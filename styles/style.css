@@ -626,6 +626,10 @@ main {
         top: 2px;
     }
 
+    .flying-symbols {
+        overflow: hidden;
+    }
+
     .flying-symbols__symbol_01 {
         font-size: 32px;
         transform: translate(320px, 0px) rotate(-18deg);
@@ -855,11 +859,14 @@ main {
         .flying-symbols__symbol_02 {
             font-size: 22px;
             transform: translate(80px, 300px) rotate(15deg);
+            top: 150px;
+            left: 0px;
         }
         .flying-symbols__symbol_03 {
-            font-size: 26px;
-            transform: translate(50px, 500px) rotate(18deg);
-            display: none;
+            font-size: 22px;
+            transform: translate(640px, 20px) rotate(15deg);
+            top: -100px;
+            left: 100px;
         }
         .flying-symbols__symbol_04 {
             font-size: 24px;
@@ -868,6 +875,8 @@ main {
         .flying-symbols__symbol_05 {
             font-size: 20px;
             transform: translate(160px, 120px) rotate(15deg);
+            top: 50px;
+            left: 100px;
         }
 
         .main-photo-container {
@@ -972,13 +981,21 @@ main {
         left: -5%;
     }
 
+    .flying-symbols {
+        overflow: visible;
+    }
+
     .flying-symbols__symbol_01 {
         font-size: 20px;
         transform: translate(100px, -10px) rotate(-18deg);
+        top: -100px;
+        left: -20px;
     }
     .flying-symbols__symbol_02 {
         font-size: 22px;
         transform: translate(110px, 80px) rotate(15deg);
+        top: 50px;
+        left: 50px;
     }
     .flying-symbols__symbol_03 {
         font-size: 26px;
@@ -992,6 +1009,8 @@ main {
     .flying-symbols__symbol_05 {
         font-size: 20px;
         transform: translate(440px, 20px) rotate(15deg);
+        top: -100px;
+        left: 100px;
     }
 
     .main-photo-container {
