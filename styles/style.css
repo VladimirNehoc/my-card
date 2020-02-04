@@ -8,7 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: Roboto, Arial;
     min-width: 320px;
 }
 
@@ -17,12 +17,18 @@ a {
     cursor: pointer;
 }
 
+.back-call-wrapper {
+    z-index: 10;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
 .back-call {
     width: 100%;
     height: 100%;
     background-color: #00000088;
-    position: fixed;
-    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;

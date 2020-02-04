@@ -1,6 +1,4 @@
 
-$('.back-call').toggle();
-
 $(function() {
     $('.menu__burger-button').on('click', function() {
         if ($('.menu__item:nth-child(1)').css('left') == '0px') menuClose();
@@ -69,11 +67,11 @@ function menuClose() {
 };
 
 function callIn() {
-    $('.back-call').fadeIn(200);
+    $('.back-call-wrapper').fadeIn(200);
 }
 
 function callOut() {
-    $('.back-call').fadeOut(200);
+    $('.back-call-wrapper').fadeOut(200);
 }
 
 
